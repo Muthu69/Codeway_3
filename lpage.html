@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Figurines | Nerd Verse</title>
+  <link rel="stylesheet" href="lpage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" href="nerd.jpeg" type="">
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="https://muthu0138.neocities.org/lpage/lpage"><img src="flag.png" class="logo"></a>
+      <h1 class="head">Nerd Verse</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+
+    <div class="content">
+      <div class="textbox">
+        <h2>its not just Anime<br>it's an <span>Emotion</span></h2>
+        <p>Welcome to our action figure haven! Dive into a world where heroes and villains collide in stunning detail. Whether you're a seasoned collector or new to the scene, our curated selection offers something for everyone. Explore iconic characters from movies and comics, discover limited editions, and embark on an adventure of imagination and nostalgia. Start your collection today and let the heroes within shine!</p>
+        <a href="#">Buy Now</a>
+        </div>
+        <div class="imgbox">
+          <img src="luffy.png" class="starbucks">
+        </div>
+      </div>
+    <ul class="thumb">
+      <li><img src="luffy.png" alt="starbucks" onclick="imgslider('luffy.png');changecirclecolor('#AA0000')"></li>
+      <li><img src="roger.png" alt="starbucks" onclick="imgslider('roger.png');changecirclecolor('#DEB887')"></li>
+      <li><img src="ace.png" alt="starbucks" onclick="imgslider('ace.png');changecirclecolor('#F28C28')"></li>
+    </ul>
+
+    <ul class="sci">
+      <a href="https://www.linkedin.com/in/muthu-kumar-aa448b221/"><i class="ri-linkedin-box-line"></i></a>
+      <a href="https://twitter.com/whaatadrag"><i class="ri-twitter-x-fill"></i></a> 
+      <a href="https://www.instagram.com/mxthx6"><i class="ri-instagram-line"></i></a> 
+    </ul>
+  </section>
+
+  <script>
+    function imgslider(anything){
+      document.querySelector('.starbucks').src=anything;
+    }
+
+    function changecirclecolor(color){
+      const circle =document.querySelector('.circle');
+      circle.style.background=color;
+    }
+  </script>
+  
+</body>
+</html>
+
